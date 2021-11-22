@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Todo</title>
+  </head>
+  <body>
+    <h1>todos</h1>
+    <section class="todoapp">
+      <header class="header">
+        <form class="new-todo-form">
+          <input type="checkbox" id="complete-all" name="complete-all"></input>
+          <label id="complete-label" for="complete-all">🔽</label>
+          <input
+            class="new-todo"
+            name="todo"
+            type="text"
+            placeholder="What needs to be done?"
+            autofocus
+            autocomplete="off"
+          />
+        </form>        
+      </header>
+      
+      <main class="main">
+        <ul class="todo-list"></ul>
+      </main>
+      <footer class="footer">
+        <span class="items-left">items left</span>
+        <div class="filters">
+          <button id="all">All</button>
+          <button id="active">Active</button>
+          <button id="completed">Completed</button>
+        </div>
+        <div>
+          <button id="clear-completed">Clear completed</button>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
